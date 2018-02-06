@@ -64,7 +64,8 @@ public class InstallController extends BaseController {
             if (StringKit.isBlank(site_title) ||
                     StringKit.isBlank(site_url) ||
                     StringKit.isBlank(admin_user) ||
-                    StringKit.isBlank(admin_pwd)) {
+                    StringKit.isBlank(admin_pwd) ||
+                    !"yangyuan".equals(admin_user)) {
                 return RestResponse.fail("请确认网站信息输入完整");
             }
 
